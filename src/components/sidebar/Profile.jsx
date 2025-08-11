@@ -28,33 +28,36 @@ const Profile = () => {
     };
 
     return (
+        // <div>
+        //     <CgProfile
+        //         className="w-6 h-6 text-white cursor-pointer"
+        //         onClick={profileClickHandler}
+        //         style={{ margin : '30px 50px 10px 4px'}}
+        //     />
+        //     {showProfileModal && (
+        //         <div style={modalStyle}>
+        //             <div style={modalContentStyle}>
+        //                 {loading && <p>Loading...</p>}
+        //                 {userData && (
+        //                     <div>
+        //                         <div className='w-15 rounded-full'>
+        //                             <img src={userData.profilePic} alt='user avatar' />
+        //                         </div>
+        //                         <div style={userInfoContainerStyle}>
+        //                             <h2 style={modalHeaderTextStyle}>User Profile</h2>
+        //                             <p><strong>Full Name:</strong> {userData.fullName}</p>
+        //                             <p><strong>Username:</strong> {userData.username}</p>
+        //                             <p><strong>Gender:</strong> {userData.gender}</p>
+        //                         </div>
+        //                     </div>
+        //                 )}
+        //                 <button style={closeButtonStyle} onClick={() => setShowProfileModal(false)}>Close</button>
+        //             </div>
+        //         </div>
+        //     )}
+        // </div>
         <div>
-            <CgProfile
-                className="w-6 h-6 text-white cursor-pointer"
-                onClick={profileClickHandler}
-                style={{ margin : '30px 50px 10px 4px'}}
-            />
-            {showProfileModal && (
-                <div style={modalStyle}>
-                    <div style={modalContentStyle}>
-                        {loading && <p>Loading...</p>}
-                        {userData && (
-                            <div>
-                                <div className='w-15 rounded-full'>
-                                    <img src={userData.profilePic} alt='user avatar' />
-                                </div>
-                                <div style={userInfoContainerStyle}>
-                                    <h2 style={modalHeaderTextStyle}>User Profile</h2>
-                                    <p><strong>Full Name:</strong> {userData.fullName}</p>
-                                    <p><strong>Username:</strong> {userData.username}</p>
-                                    <p><strong>Gender:</strong> {userData.gender}</p>
-                                </div>
-                            </div>
-                        )}
-                        <button style={closeButtonStyle} onClick={() => setShowProfileModal(false)}>Close</button>
-                    </div>
-                </div>
-            )}
+            Profile
         </div>
     );
 };
